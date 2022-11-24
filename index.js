@@ -1,5 +1,7 @@
 // Variables
 const buttonReroll = document.getElementById("reroll-btn")
+const buttonP1 = document.getElementById("p1-button")
+const buttonP2 = document.getElementById("p2-button")
 
 // Functions
 function reroll() {
@@ -29,7 +31,23 @@ function reroll() {
     }
 }
 
-// TODO: Combine the functionality above into a function somehow
+function toggleP1Results() {
+    if (document.querySelector("#p1 .card-footer").style.display === "none") {
+        document.querySelector("#p1 .card-footer").style.display = "block";
+    } else {
+        document.querySelector("#p1 .card-footer").style.display = "none";
+    }
+}
+
+function toggleP2Results() {
+    if (document.querySelector("#p2 .card-footer").style.display === "none") {
+        document.querySelector("#p2 .card-footer").style.display = "block";
+    } else {
+        document.querySelector("#p2 .card-footer").style.display = "none";
+    }
+}
+
+// TODO: Combine this functionality  into a function somehow
 // function postWinner(winner, playerRoll) {
 //     let icon = document.createElement("i");
 //     let footer = document.querySelector(`${winner} .card-footer`);
@@ -39,3 +57,5 @@ function reroll() {
 
 // Events
 buttonReroll.addEventListener("click", reroll)
+buttonP1.addEventListener("click", toggleP1Results)
+buttonP2.addEventListener("click", toggleP2Results)
