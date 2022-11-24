@@ -1,0 +1,15 @@
+.card {
+    max-width: 100%;
+}
+
+.dice {
+    font-size: 6rem;
+}
+
+#p1 .card-header {
+    background-color: gainsboro;
+}
+
+#p2 .card-header {
+    background-color: gainsboro;
+}
