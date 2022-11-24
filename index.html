@@ -21,29 +21,38 @@
     <title>Dice Roller</title>
   </head>
   <body class="text-center">
-    <section class="container mt-5">
+    <section class="container mt-5 mb-4">
       <h1>Dice Roller</h1>
     </section>
+    <div class="row">
+      <div class="col">
+        <button id="reroll-btn" type="button" class="btn btn-primary btn-lg">
+          Reroll
+        </button>
+      </div>
+    </div>
     <section class="container">
       <div class="row m-5">
-        <div id="p1" class="col">
+        <div id="p1" class="col-6">
           <div class="card">
             <div class="card-header">Player 1</div>
-            <div class="card-body"><i id="p1-die" class="bi bi-dice-1 dice"></i></div>
+            <div class="card-body">
+              <i id="p1-die" class="bi bi-dice-1 dice"></i>
+            </div>
+            <div class="card-footer text-muted"></div>
           </div>
         </div>
-        <div id="p2" class="col">
+        <div id="p2" class="col-6">
           <div class="card">
             <div class="card-header">Player 2</div>
-            <div class="card-body"><i id="p2-die" class="bi bi-dice-1 dice"></i></div>
+            <div class="card-body">
+              <i id="p2-die" class="bi bi-dice-1 dice"></i>
+            </div>
+            <div class="card-footer text-muted"></div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <button id="reroll-btn" type="button" class="btn btn-primary btn-lg">Reroll</button>
-        </div>
-      </div>
+      
     </section>
 
     <!-- Bootstrap JavaScript -->
