@@ -1,5 +1,5 @@
 // Variables
-const buttonReroll = document.getElementById("reroll-btn")
+const buttonReroll = document.getElementById("roll-btn")
 const buttonP1 = document.getElementById("p1-button")
 const buttonP2 = document.getElementById("p2-button")
 
